@@ -33,3 +33,12 @@
         - Servlet, JSP, Spring Framework 등
 
     3) Java ME (Java Micro Edition)
+
+4. 자바의 기본 도구
+    1) javac.exe : 자바 컴파일러 (Java Compiler)
+        -컴파일 형식
+            javac 파일명.java
+    2) java.exe : 자바 런저 (Java Launcher)
+        - 실행 형식
+            java 파일명
+            
