@@ -79,7 +79,26 @@
                                                                                   |          |
          1. git init   ->   2. 작업 디렉토  ------>     스테이징 영역  ------>   지역 저장소 ------>  5. git push 
                                        3. git add                   4. git commit         <------  7. git pull 
-                                                                                                      
+
+    6) 커밋 로그를 조회하는 명령어 
+        - git log
+        - git log -p 
+            - patch
+            - 파일 단위에서 변경 내용을 보여줌. 
+
+        - git log -[숫자]
+            - 최근 몇개의 커밋을 보여줄지 지정함
+
+        - git log --status  
+            - 갓 커밋의 통계 정보 볼수 있음.
+               - 어떤 파일이 수정되었고, 각 파일에서 몇 줄이추가, 삭제되었는지 의미함.    
+
+        - git log --pretty=oneline
+            - 각 커밋을 한 줄로 보여줌
+
+        - git log --pretty=oneline --graph
+            - 여러 브랜치를 생성하고 병합하는 작업을 가시적으로 그래프적으로 표시함.    
+
 6. 깃 작업 트리 (working tree)
 
     1) 작업 디렉터리(Work Directory)
@@ -105,7 +124,19 @@
                                 -------------------->
                             Unstage                 Stage
 
+7. git add 명령으로 스테이징 영역에 파일이 추가됨
 
+    1) Stage : 커밋으로 기록할 수 있는 최종 상태
+        - Tracked 상태와 Unmodified 상태 
 
+    2) UnStage : 스테이징 영역에 있지만, 파일에 변화가 있는 상태
+        - 커밋으로 기록할 수 있는 상태가 아님
+                 
+8. 새로운 브랜치 생성 및 이동
+            
+    1) 저장소에 브랜치 추가
+        - git branch 이름 
 
+    2) 작업중인 브랜치 변경
+        - git checkout 브랜치이름
 
