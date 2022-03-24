@@ -99,6 +99,10 @@
         - git log --pretty=oneline --graph
             - 여러 브랜치를 생성하고 병합하는 작업을 가시적으로 그래프적으로 표시함.    
 
+    7) 브랜치 병합
+        - git merge 브랜치이름
+            - 현재 작업 중인 브랜치에 '브랜치이름'의 브랜치를 끌어와 병합함
+
 6. 깃 작업 트리 (working tree)
 
     1) 작업 디렉터리(Work Directory)
