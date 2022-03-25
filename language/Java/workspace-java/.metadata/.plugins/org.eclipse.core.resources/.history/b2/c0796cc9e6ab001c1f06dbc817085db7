@@ -1,0 +1,16 @@
+package kr.co.ezenac.constructor;
+
+class A{
+	int value;
+}
+
+class B{
+	int value;
+}
+public class ConstructorTest {
+
+	public static void main(String[] args) {
+
+	}
+
+}

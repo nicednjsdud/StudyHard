@@ -1,0 +1,15 @@
+package kr.co.ezenac.decision;
+
+public class IfElse {
+
+	public static void main(String[] args) {
+		/*
+		 *  ID : 
+		 *  PW :
+		 *  
+		 *  관리자 로그인 성공
+		 *  로그인 실패
+		 */
+	}
+
+}

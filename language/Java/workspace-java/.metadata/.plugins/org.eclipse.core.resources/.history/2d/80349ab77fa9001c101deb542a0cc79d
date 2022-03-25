@@ -1,0 +1,21 @@
+package kr.co.ezenac.decision3;
+
+public class MethodTest {
+	
+	public static void add(int num1,int num2) {
+		
+		
+	}
+	
+	public static void main(String[] args) {
+	
+		int num1 = 10;
+		int num2 = 30;
+		
+		int result = add(num1,num2);
+		
+		
+		
+		
+	}
+}

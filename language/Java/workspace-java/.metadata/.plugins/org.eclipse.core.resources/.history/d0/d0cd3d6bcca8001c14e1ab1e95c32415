@@ -1,0 +1,7 @@
+package kr.co.ezenac.decision2;
+
+public class SwitchTest {
+	public static void main(String[] args) {
+		
+	}
+}

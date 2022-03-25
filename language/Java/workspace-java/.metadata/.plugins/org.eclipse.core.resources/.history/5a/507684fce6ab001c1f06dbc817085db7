@@ -1,0 +1,23 @@
+package kr.co.ezenac.constructor;
+
+class A{
+	int value;
+}
+
+class B{
+	int value;
+	
+	public B() {}
+	public B(int value) {
+		this.value=value;
+	}
+}
+public class ConstructorTest {
+
+	public static void main(String[] args) {
+		A a= new A();
+		
+		B b= new B(20);
+	}
+
+}

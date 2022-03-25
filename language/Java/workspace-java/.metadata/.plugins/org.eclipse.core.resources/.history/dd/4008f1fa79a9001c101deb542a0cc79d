@@ -1,0 +1,15 @@
+package kr.co.ezenac.decision3;
+
+public class RandomTest {
+
+	public static void main(String[] args) {
+		// Math.random() : 0.000000 ~ 0.999999사이의 값을 발생시킴
+		System.out.println(Math.random());
+		
+		// 주사위 숫자 랜덤하게 발생
+//		int num = (int)(Math.random()*6);				// 0 ~ 5
+		int num = (int)(Math.random()*6) + 1;
+		System.out.println(num);
+	}
+
+}

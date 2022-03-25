@@ -1,0 +1,18 @@
+package kr.co.ezenac.overloading2;
+
+public class Accumulator {
+	
+	public int add(int x,int y) {
+		System.out.println("add(int x,int y)");
+		return x + y;
+	}
+	public long add(int x, long y) {
+		System.out.println("add(int x,long y)");
+		return x + y;
+	}
+	
+	public long add(long x, int y) {
+		System.out.println("add(long x,int y)");
+		return x + y;
+	}
+}

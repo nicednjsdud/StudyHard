@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.decision3.MethodTest"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.field.FieldInit"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.member.Student"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.member2.Monitor"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.overloading2.Accumulator"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.constructor.Student"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,17 @@
+package kr.co.ezenac.member4;
+
+class EzenIT{
+	
+	String name;
+	int floor;
+	public void hello() {
+		System.out.println("안녕하세요.");
+	}
+}
+
+public class Ezen {
+
+	
+	
+	
+}

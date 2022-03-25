@@ -1,0 +1,21 @@
+package kr.co.ezenac.total;
+
+import java.util.Scanner;
+
+public class MyCalculator {
+
+	public static void main(String[] args) {
+		Scanner sc =new Scanner(System.in);	
+		
+		while(true) {
+			showMenu();
+		}
+		
+		sc.close();
+	}
+
+	public static void showMenu() {
+		
+	}
+
+}

@@ -1,0 +1,28 @@
+package kr.co.ezenac.loop2;
+
+public class WhileTest {
+
+	public static void main(String[] args) {
+		
+		int sum = 0;
+		int i = 1;
+		/*
+		 *  while문 옆에는 조건식만 들어간다.
+		 *  for문에 비해서 일반적으로 반복에서는 가독성이 떨어진다.
+		 */
+		while(i<=100) {
+			sum+=i;
+			i++;
+			System.out.println(sum);
+		}
+		System.out.println("1~100까지의 합 : "+sum);
+		System.out.println();
+		
+		int j=1;
+		while(true) {
+			System.out.println(j);
+		}
+		
+	}
+
+}

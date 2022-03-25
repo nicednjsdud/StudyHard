@@ -1,0 +1,12 @@
+package kr.co.ezenac.constructor;
+
+public class Student {
+	
+	private String name;
+	private int age;
+	
+	public Student() {
+		System.out.println("기본생성자 호출");
+	}
+
+}

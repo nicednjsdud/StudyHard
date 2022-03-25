@@ -1,0 +1,65 @@
+package kr.co.ezenac.member3;
+
+/*
+ *  사용자 정의 클래스 (User Define Class)
+ *  - 서로 의미가 있으며, 관련된 데이터라면 묶어서 하나의 타입으로 정의할 수 있음.
+ */
+public class Time {
+	
+	private int hour;
+	private int minute;
+	private int second;
+	
+	/*
+	 *  getter() : 멤버변수의 값을 읽어가는 메서드
+	 *  setter() : 멤버변수의 값을 수정하는 메서드
+	 */
+	
+	public int getHour() {
+		return this.hour;
+	}
+	public void setHour(int hour) {
+		//시에 대한 예외처리 코드를 작성
+		if(hour<0 || hour>23) {
+			System.out.println("시간을 잘못 입력하셨습니다.");
+			return;				//exit
+		}
+		this.hour=hour;	
+	}
+	
+	public int getMinute() {
+		return minute;
+	}
+	public void setMinute(int minute) {
+		if(minute<0 || minute >59) {
+			System.out.println("시간을 잘못 입력하셨습니다.");
+			return;
+		}
+		this.minute=minute;
+	}
+	
+	public int getSecond() {
+		return this.second;
+	}
+	public void setSecond(int second) {
+		if(second<0 || second >59) {
+			System.out.println("시간을 잘못 입력하셨습니다.");
+			return;
+		}
+		this.second=second;
+	}
+	
+	@Override
+	public String toString() {
+		
+		return this.getHour() + "시"+
+				this.getMinute()+"분"+
+				this.getSecond()+"초";
+	}
+	
+	
+	
+	
+	
+	
+}

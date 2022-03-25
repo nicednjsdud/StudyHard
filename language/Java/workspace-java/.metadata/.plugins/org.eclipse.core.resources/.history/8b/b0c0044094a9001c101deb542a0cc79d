@@ -1,0 +1,25 @@
+package kr.co.ezenac.loop;
+
+//********
+//*******
+//******
+//*****
+//****
+//***
+//**
+//*
+
+public class ForTriangle {
+
+	public static void main(String[] args) {
+		
+		for(int i=1;i<=8;i++) {
+			for(int j=8;j>0;j--) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+
+}
+ 

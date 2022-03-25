@@ -1,0 +1,36 @@
+package kr.co.ezenac.review;
+
+public class Operator {
+
+	public static void main(String[] args) {
+				
+		System.out.println(3 + 5);
+		System.out.println("3" + "5");
+		
+		/*
+		 *  문자열 + Any => 문자열
+		 */
+		System.out.println("3"+5);
+		System.out.println(3+"5");
+		
+		System.out.println();
+		
+		// 참조형 변수
+		String str1 = new String("abc");
+		String str2 = "abc";
+		String str3 = str2;
+		
+	
+		System.out.println("str1의 현재값 : "+"["+str1+"]");
+		System.out.println("str2의 현재값 : "+"["+str2+"]");
+		System.out.println("str3의 현재값 : "+"["+str3+"]");
+		
+		// 비교연산자 == 
+		System.out.println("str1 == str2 : "+(str1==str2));
+		System.out.println("str1 == str3 : "+(str1==str3));
+		System.out.println("str2 == str3 : "+(str2==str3));
+		
+		System.currentTimeMillis()
+	}
+
+}

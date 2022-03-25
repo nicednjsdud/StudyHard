@@ -1,0 +1,9 @@
+package kr.co.ezenac.loop2;
+
+public class WhileTest2 {
+
+	public static void main(String[] args) {
+
+	}
+
+}

@@ -1,0 +1,42 @@
+package kr.co.ezenac.member2;
+
+public class Monitor {
+	
+	
+	// 멤버변수(필드)
+	String color;				//모니터의 색생
+	int channel;				// 채널
+	int volume;					// 볼륨
+	boolean power;				// 전원 (on/off)
+	
+	// 멤버메서드
+	public void power() {
+		
+		if(!this.power) {
+			System.out.println("모니터가 켜졌습니다.");
+			this.power= !power;
+		}
+		else {
+			System.out.println("모니터가 꺼졌습니다.");
+			this.power = !power;
+		}
+			
+	}
+	
+	// 채널업 (channelUP())
+	public void channelUp() {
+		int count =0;
+		count ++;
+		System.out.println("채널이 "+ count+ " 증가하였습니다.");
+	}
+	
+	// 채널다운 (channelDown())
+	public void channelDown() {
+		int count =0;
+		count ++;
+		System.out.println("채널이 "+ count+ " 감소하였습니다.");
+	}
+	
+	
+	
+}

@@ -1,0 +1,24 @@
+package kr.co.ezenac.decision;
+
+public class IfIfElse {
+
+	public static void main(String[] args) {
+		
+		int score = 91;
+		
+		if(score > 90) {
+			System.out.println("점수가 90점보다 큽니다.");
+			System.out.println("학점은 A학점입니다.");
+		}
+		
+		if(score > 80) {
+			System.out.println("점수가 80점보다 큽니다.");
+		}
+		
+		if(score >92) {
+			System.out.println("점수가 92보다 큽니다.");
+		}
+		
+	}
+
+}

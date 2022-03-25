@@ -1,0 +1,13 @@
+package kr.co.ezenac.member3;
+
+public class TimeTest {
+	
+	public static void main(String[] args) {
+		
+		Time t = new Time();
+		
+		System.out.println(t);
+		
+		
+	}
+}

@@ -1,0 +1,35 @@
+package kr.co.ezenac.decision;
+
+public class IfElseIfElse {
+
+	public static void main(String[] args) {
+		
+		int age = 13;
+		int charge;
+		
+		if(age < 8) {
+			charge=1000;
+			System.out.println("미취학 아동입니다.");
+		}
+		else if(age < 14) {
+			charge = 2000;
+			System.out.println("초등학생입니다.");
+		}
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}
