@@ -10,4 +10,6 @@
     <fullyQualifiedTypeName name="kr.co.ezenac.member2.Monitor"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.overloading2.Accumulator"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.constructor.Student"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.constructor2.Car"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.constructor2.Car2"/>
 </qualifiedTypeNameHistroy>

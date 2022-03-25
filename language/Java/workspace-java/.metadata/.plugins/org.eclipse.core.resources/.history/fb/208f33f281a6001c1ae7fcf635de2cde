@@ -1,9 +1,0 @@
-package kr.co.ezenac.console;
-
-public class Printf3 {
-
-	public static void main(String[] args) {
-
-	}
-
-}
