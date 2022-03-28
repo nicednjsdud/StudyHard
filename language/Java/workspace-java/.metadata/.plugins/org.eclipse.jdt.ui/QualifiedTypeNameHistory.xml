@@ -12,4 +12,17 @@
     <fullyQualifiedTypeName name="kr.co.ezenac.constructor.Student"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.constructor2.Car"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.constructor2.Car2"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.reference.Subject"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.reference.Student"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.encap.MakeReport"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.collabration.Student"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.collabration.Bus"/>
+    <fullyQualifiedTypeName name="org.graalvm.compiler.core.common.type.ArithmeticOpTable.BinaryOp.Sub"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.collabration.Subway"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.collabration2.Person"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.collabration2.Taxi"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.staticvariable.Employee"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.staticmethod.MyCalculator"/>
 </qualifiedTypeNameHistroy>
