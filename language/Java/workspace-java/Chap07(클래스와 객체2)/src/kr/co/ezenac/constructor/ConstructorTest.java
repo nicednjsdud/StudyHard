@@ -22,6 +22,8 @@ public class ConstructorTest {
 		A a= new A();
 		
 		B b= new B(20);
+		System.out.println(a);
+		System.out.println(b);
 	}
 
 }

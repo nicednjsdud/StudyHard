@@ -14,7 +14,7 @@ public class OperatorTest {
 			System.out.println("예외 발생 : "+e.getMessage());
 		}
 		
-//		System.out.println("나누기 결과 : "+result);
+		System.out.println("나누기 결과 : "+result);
 		
 	}
 
