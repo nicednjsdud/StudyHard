@@ -1,9 +1,0 @@
-package kr.co.ezenac.loop;
-
-public class InputGugudan {
-
-	public static void main(String[] args) {
-
-	}
-
-}

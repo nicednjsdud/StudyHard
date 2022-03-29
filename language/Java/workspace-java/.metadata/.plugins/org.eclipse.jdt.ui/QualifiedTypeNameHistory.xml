@@ -25,4 +25,10 @@
     <fullyQualifiedTypeName name="kr.co.ezenac.staticvariable.Employee"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.staticmethod.MyCalculator"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.singleton.Company"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.singleton2.CarFactory"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.singleton2.Car"/>
+    <fullyQualifiedTypeName name="java.lang.Iterable"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>

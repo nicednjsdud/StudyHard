@@ -1,9 +1,0 @@
-package kr.co.ezenac.loop2;
-
-public class DoWhileTest {
-
-	public static void main(String[] args) {
-
-	}
-
-}
