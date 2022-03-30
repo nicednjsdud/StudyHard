@@ -19,25 +19,23 @@ public class ArraySort {
 		//버블 정렬
 		// 1차원 배열이라도 더블 루프가 필요하고 조건문이 하나 필요
 		
-		for(int i=0;i<ball.length;i++) {	
-			for(int j=0;j<ball.length-1;j++) {
-				int temp=0;
-				if(ball[j]>ball[j+1]) {
-					temp=ball[j];
-					ball[j]=ball[j+1];
-					ball[j+1]=temp;
-				}
-				else {
-					continue;
-				}
-			}
-		}
+//		for(int i=0;i<ball.length;i++) {	
+//			for(int j=0;j<ball.length-1;j++) {
+//				int temp=0;
+//				if(ball[j]>ball[j+1]) {
+//					temp=ball[j];
+//					ball[j]=ball[j+1];
+//					ball[j+1]=temp;
+//				}
+//			}
+//		}
+		Arrays.sort(ball);
 		System.out.println();
 		System.out.println("정렬 후");
-		for(int b:ball) {
-			System.out.print(b+" ");
-		}
-		
+//		for(int b:ball) {
+//			System.out.print(b+" ");
+//		}
+		System.out.println(Arrays.toString(ball));
 	}
 
 }
