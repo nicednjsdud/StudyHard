@@ -1,6 +1,6 @@
 package kr.co.ezenac.array2;
 
-public class TwoArray {
+public class TwoDArray {
 
 	public static void main(String[] args) {
 		

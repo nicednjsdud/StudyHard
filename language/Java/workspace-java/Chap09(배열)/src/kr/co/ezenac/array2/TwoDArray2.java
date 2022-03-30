@@ -1,6 +1,6 @@
 package kr.co.ezenac.array2;
 
-public class TwoArray2 {
+public class TwoDArray2 {
 
 	public static void main(String[] args) {
 		int[][] score=new int[][] {
@@ -34,14 +34,17 @@ public class TwoArray2 {
 			totalSum+=sum;
 			avg=(double)sum/score[i].length;
 			totalAvg+=avg;
-			System.out.print("\t"+sum+"\t"+avg);
-			System.out.println();
+			System.out.print("\t"+sum+"\t");
+			System.out.printf("%.2f\n",avg);
 			
 		}
-		totalAvg=totalAvg/score.length;
-		
+		totalAvg/=score.length;
+		System.out.printf("총점\t%d\t%d\t%d\t%d\t%.2f\n",
+								korTotal,engTotal,mathTotal,totalSum,totalAvg);
 		System.out.println("============================================");
-		System.out.print("개인별 평균의 평균 : "+totalAvg+" 국영수 총합: "+totalSum+"\n");
+
+	
+		
 		
 	}
 
