@@ -33,4 +33,13 @@
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.bankApp.Account"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.arraylist2.Book"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.arraylist3.Subject"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.arraylist3.Student"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.inheritance.MountainBike"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.inheritance2.Circle"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.inheritance2.Point"/>
 </qualifiedTypeNameHistroy>

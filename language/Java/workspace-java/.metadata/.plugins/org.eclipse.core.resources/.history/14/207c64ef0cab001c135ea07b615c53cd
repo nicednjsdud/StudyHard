@@ -1,9 +1,0 @@
-package kr.co.ezenac.member2;
-
-public class MonitorTest {
-
-	public static void main(String[] args) {
-
-	}
-
-}
