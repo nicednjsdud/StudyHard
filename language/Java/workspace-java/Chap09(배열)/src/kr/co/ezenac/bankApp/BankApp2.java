@@ -2,7 +2,7 @@ package kr.co.ezenac.bankApp;
 
 import java.util.Scanner;
 
-public class BankApp {
+public class BankApp2 {
 	
 	//배열 100개 정적멤버
 	private static Account[] accountArray = new Account[100];
@@ -44,20 +44,34 @@ public class BankApp {
 		System.out.println("------------------");
 		System.out.println("출금을 합니다.");
 		System.out.println("------------------");
-		
-		System.out.print("계좌번호 입력 : ");
-		String ano= scan.next();
-		System.out.print("출금액 : ");
-		int money = scan.nextInt();
-		
-		Account account =findAccount(ano);
-		
-		if(account==null) {
-			System.out.println("결과 : 계좌가 없습니다. 확인 바랍니다.");
-			return;
+		System.out.print("얼마를 출금하시겠습니까? : ");
+		int balance=scan.nextInt();
+		System.out.print("계좌번호를 입력해주세요. : ");
+		String ano=scan.next();
+		for(int i=0;i<accountArray.length;i++) {
+			if(accountArray[i]!=null) {
+			if((accountArray[i].getAno()).equals(ano)) {
+				int current_balance=accountArray[i].getBalance();
+				if(current_balance<balance) {
+					System.out.println("잔액이 부족합니다.");
+					System.out.println("현재 잔액 : "+current_balance);				
+					break;
+				}
+				else if(current_balance>=balance){
+				accountArray[i].setBalance(-balance);
+				System.out.println("출금이 완료되었습니다.");
+				System.out.println("총 금액은 : "+accountArray[i].getBalance());
+				break;
+				}
+				
+				}
+				}
+			else {
+				System.out.println("계좌 번호가 잘못되었습니다.");
+				System.out.println("다시 입력해주세요.");
+				break;
+			}
 		}
-		account.setBalance(account.getBalance() - money);
-		System.out.println("결과 : 출금이 성공했습니다. 현재잔액 : "+account.getBalance());
 		
 	}
 
@@ -65,52 +79,42 @@ public class BankApp {
 		System.out.println("------------------");
 		System.out.println("예금을 합니다.");
 		System.out.println("------------------");
-		
-		System.out.print("계좌번호 입력 : ");
-		String ano= scan.next();
-		System.out.print("예금액 : ");
-		int money = scan.nextInt();
-		
-		Account account =findAccount(ano);
-		
-		if(account==null) {
-			System.out.println("결과 : 계좌가 없습니다. 확인 바랍니다.");
-			return;
-		}
-		account.setBalance(account.getBalance()+money);
-		System.out.println("결과 : 예금이 성공했습니다. 현재잔액 : "+account.getBalance());
-	
-	}
-	public static Account findAccount(String ano) {
-		Account account = null;
-		for(int i=0; i<accountArray.length;i++) {
+		System.out.print("얼마를 예금하시겠습니까? :");
+		int balance=scan.nextInt();
+		System.out.print("계좌번호를 입력해주세요. :");
+		String ano=scan.next();
+		for(int i=0;i<accountArray.length;i++) {
+			// account가 널이 아니면
 			if(accountArray[i]!=null) {
-				//매개변수로 넘어온 계좌번호와 동일하다면.
-				if(accountArray[i].getAno().equals(ano)) {
-					account = accountArray[i];
-					break;
+			
+			if((accountArray[i].getAno()).equals(ano)) {
+				accountArray[i].setBalance(balance);
+				System.out.println("입금이 완료되었습니다.");
+				System.out.println("총 금액은 : "+accountArray[i].getBalance());
+				break;
 				}
+			// 계좌번호가 다르면
+			else {
+				System.out.println("계좌 번호가 잘못되었습니다.");
+				System.out.println("다시 입력해주세요.");
+				break;
+			}
 			}
 		}
-		return account;
 	}
 	//계좌목록 출력하기
 	public static void accountList() {
 		System.out.println("------------------");
-		System.out.println("계좌목록를 출력합니다.");
-		System.out.println("------------------");
+		System.out.println("   계좌 목록   ");
 		
-		for(int i=0; i<accountArray.length;i++) {
-			Account account = accountArray[i];
-			
-			// 계좌에 대한 내용이 존재한다면
-			if(account !=null) {
-				System.out.print(account.getAno());
-				System.out.print("\t");
-				System.out.print(account.getOwner());
-				System.out.print("\t");
-				System.out.print(account.getBalance());
-				System.out.println();
+		for(int i=0;i<accountArray.length;i++) {
+			if(accountArray[i]!=null) {
+				System.out.println(accountArray[i].getAno()+", "+accountArray[i].getOwner()+", "+accountArray[i].getBalance());
+			}
+			else {
+				System.out.println("------------------");
+				break;
+				
 			}
 		}
 	}
@@ -136,9 +140,9 @@ public class BankApp {
 		for(int i=0;i<accountArray.length;i++) {
 			if(accountArray[i]==null) {
 				accountArray[i]=newAccount;
-//				System.out.println("결과 : 계좌 생성 완료되었습니다.");
-//				System.out.println(accountArray[i].getAno() +
-//							", "+accountArray[i].getOwner()+", "+accountArray[i].getBalance());
+				System.out.println("결과 : 계좌 생성 완료되었습니다.");
+				System.out.println(accountArray[i].getAno() +
+							", "+accountArray[i].getOwner()+", "+accountArray[i].getBalance());
 				break;
 			}
 			
