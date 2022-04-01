@@ -1,9 +1,0 @@
-package kr.co.ezenac.constructor;
-
-public class ConstructorTest {
-
-	public static void main(String[] args) {
-
-	}
-
-}

@@ -42,4 +42,10 @@
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.inheritance2.Circle"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.inheritance2.Point"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.inheritance3.Marine"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.inheritance4.VIPCustomer"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.inheritance4.Customer"/>
+    <fullyQualifiedTypeName name="org.graalvm.compiler.nodes.NodeView.Default"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.total.Card"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.total.Deck"/>
 </qualifiedTypeNameHistroy>

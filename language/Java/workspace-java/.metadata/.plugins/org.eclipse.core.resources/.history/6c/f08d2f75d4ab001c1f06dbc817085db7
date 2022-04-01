@@ -1,9 +1,0 @@
-package kr.co.ezenac.overloading2;
-
-public class AccumulatorTest {
-
-	public static void main(String[] args) {
-
-	}
-
-}

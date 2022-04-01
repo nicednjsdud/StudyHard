@@ -1,6 +1,0 @@
-package kr.co.ezenac.constructor2;
-
-public class Snippet {
-	Car car2=new Car("파랑","자동",7);
-}
-
