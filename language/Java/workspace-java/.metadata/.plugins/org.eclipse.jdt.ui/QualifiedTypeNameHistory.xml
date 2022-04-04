@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="kr.co.ezenac.decision3.MethodTest"/>
-    <fullyQualifiedTypeName name="java.lang.Math"/>
-    <fullyQualifiedTypeName name="kr.co.ezenac.field.FieldInit"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.member.Student"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.member2.Monitor"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.overloading2.Accumulator"/>
@@ -35,7 +30,6 @@
     <fullyQualifiedTypeName name="kr.co.ezenac.bankApp.Account"/>
     <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.arraylist2.Book"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.arraylist3.Subject"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.arraylist3.Student"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.inheritance.MountainBike"/>
@@ -48,4 +42,22 @@
     <fullyQualifiedTypeName name="org.graalvm.compiler.nodes.NodeView.Default"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.total.Card"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.total.Deck"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.ploymorphism.Striker"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.ploymorphism.MidFielder"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.ploymorphism.Player"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.ploymorphism.Defender"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.ploymorphism2.PoliceCar"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.ploymorphism2.SportCar"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.ploymorphism2.Car"/>
+    <fullyQualifiedTypeName name="java.lang.Package"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.polymorphism3.Child"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.polymorphism3.Parent"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.polymorphism4.Animal"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.polymorphism4.AnimalTest"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.abstract1.Computer"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.abstract1.MyNoteBook"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.abstract1.DeskTop"/>
 </qualifiedTypeNameHistroy>
