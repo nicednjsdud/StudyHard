@@ -26,24 +26,51 @@ public class Deck  {
 	public Deck() {
 		System.out.println("Deck 기본생성자 호출");
 	}
-	// 카드 하나를 선택한다. (pick() 메서드)
+	//지정된 카드 하나를 선택한다. (pick() 메서드)
+	public Card pick(int index) {
+		if( 0<=index && index < CARD_NUM) {
+			return card[index];
+		}
+		else {
+			return pick();
+		}
+	}
 	
-	
+	private Card pick() {
+		int index = (int)(Math.random()*CARD_NUM);
+		System.out.print("임의로 뽑은 카드 => ");
+		System.out.printf("%d번은 ",index);
+		return pick(index);
+	}
 	// 카드를 섞는 (shuffle()메서드)
 	public void shuffle() {
-		int temp=0;
-		for(int j=0;j<card.length;j++) {
-			int i=(int)(Math.random()*51)+1;
-			
-			card[temp]=card[j];
-			card[j]=card[i];
-			card[i]=card[temp];
-			
-		}
-	for(int i=0;i<card.length;i++) {
-		System.out.printf("Card[%d]의 무늬 : %d, Card[%d]의 숫자 : %d\n",
-				i,card[i].kind,i, card[i].number);
-	}
-	}
+//		int temp=0;
+//		for(int j=0;j<card.length;j++) {
+//			int i=(int)(Math.random()*CARD_NUM);
+//			
+//			card[temp]=card[j];
+//			card[j]=card[i];
+//			card[i]=card[temp];
+//			
+//		}
+//	for(int i=0;i<card.length;i++) {
+//		System.out.printf("Card[%d]의 무늬 : %d, Card[%d]의 숫자 : %d\n",
+//				i,card[i].kind,i, card[i].number);
+//	}
 	
+		for(int n=0;n<1000;n++) {
+			// 카드를 무작위로 섞음
+			int i =(int)(Math.random()*CARD_NUM);
+			Card temp= card[0];
+			card[0]=card[i];
+			card[i]=temp;
+		}
+		System.out.println();
+		System.out.println("카드 섞은 후 결과");
+		for(int i=0;i<card.length;i++) {
+			System.out.printf("Card[%d]의 무늬 : %d, Card[%d]의 숫자 : %d\n",
+					i,card[i].kind,i, card[i].number);
+		}
+		
+	}	
 }
