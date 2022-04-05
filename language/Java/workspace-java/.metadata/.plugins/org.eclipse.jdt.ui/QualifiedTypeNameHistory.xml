@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
-    <fullyQualifiedTypeName name="kr.co.ezenac.encap.MakeReport"/>
-    <fullyQualifiedTypeName name="kr.co.ezenac.collabration.Student"/>
-    <fullyQualifiedTypeName name="kr.co.ezenac.collabration.Bus"/>
-    <fullyQualifiedTypeName name="org.graalvm.compiler.core.common.type.ArithmeticOpTable.BinaryOp.Sub"/>
-    <fullyQualifiedTypeName name="kr.co.ezenac.collabration.Subway"/>
-    <fullyQualifiedTypeName name="kr.co.ezenac.collabration2.Person"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.collabration2.Taxi"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.staticvariable.Employee"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
@@ -59,5 +52,12 @@
     <fullyQualifiedTypeName name="kr.co.ezenac.interface2.Calc"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.interface2.CompletCalc"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.interface2.Calculator"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="java.util.Properties"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.userinfo.web.UserInfoTest"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.domain.userinfo.UserInfo"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.domain.userinfo.dao.oracle.UserInfoOracleDao"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.domain.userinfo.dao.mysql.UserInfoMySqlDao"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.domain.userinfo.dao.UserInfoDao"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.domain.userinfo.dao.msspl.UserInfoMsSqlDao"/>
 </qualifiedTypeNameHistroy>
