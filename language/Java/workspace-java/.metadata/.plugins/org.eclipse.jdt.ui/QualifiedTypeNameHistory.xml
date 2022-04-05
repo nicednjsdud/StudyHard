@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="kr.co.ezenac.member.Student"/>
-    <fullyQualifiedTypeName name="kr.co.ezenac.member2.Monitor"/>
-    <fullyQualifiedTypeName name="kr.co.ezenac.overloading2.Accumulator"/>
-    <fullyQualifiedTypeName name="kr.co.ezenac.constructor.Student"/>
-    <fullyQualifiedTypeName name="kr.co.ezenac.constructor2.Car"/>
-    <fullyQualifiedTypeName name="kr.co.ezenac.constructor2.Car2"/>
-    <fullyQualifiedTypeName name="kr.co.ezenac.reference.Subject"/>
-    <fullyQualifiedTypeName name="kr.co.ezenac.reference.Student"/>
     <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.encap.MakeReport"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.collabration.Student"/>
@@ -60,4 +52,12 @@
     <fullyQualifiedTypeName name="kr.co.ezenac.abstract1.Computer"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.abstract1.MyNoteBook"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.abstract1.DeskTop"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.abstract2.ManualCar"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.interface1.AudioRemote"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.interface1.RemoteControl"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.interface1.Television"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.interface2.Calc"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.interface2.CompletCalc"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.interface2.Calculator"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.domain.userinfo.UserInfo"/>
 </qualifiedTypeNameHistroy>
