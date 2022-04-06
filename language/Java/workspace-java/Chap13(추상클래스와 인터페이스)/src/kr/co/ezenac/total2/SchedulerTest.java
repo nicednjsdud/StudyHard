@@ -12,24 +12,24 @@ public class SchedulerTest {
 		
 		int click = System.in.read();
 		
+		Scheduler scheduler =null;
 		if(click=='R'||click=='r') {
-			Scheduler roundRobin =new RoundRobin();
-			roundRobin.getNextCall();
-			roundRobin.sendCallToAgent();
+			scheduler=new RoundRobin();
+			
 		}
 		else if(click=='L'||click=='l') {
-			Scheduler leastJob = new LeastJob();
-			leastJob.getNextCall();
-			leastJob.sendCallToAgent();
+			scheduler= new LeastJob();
+			
 		}
 		else if(click=='P'||click=='p') {
-			Scheduler pa=new PriorityAllocation();
-			pa.getNextCall();
-			pa.sendCallToAgent();
+			scheduler=new PriorityAllocation();
 		}
 		else {
 			System.out.println("지원하지 않는 기능입니다.");
+			return;
 		}
+		scheduler.getNextCall();
+		scheduler.sendCallToAgent();
 	}
 
 }
