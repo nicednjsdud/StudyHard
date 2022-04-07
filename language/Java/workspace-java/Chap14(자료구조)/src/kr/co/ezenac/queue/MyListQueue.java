@@ -33,6 +33,7 @@ public class MyListQueue extends MyLinkedList implements IQueue {
 			newNode = addElement(data);
 			rear=newNode;
 		}
+		tail++;
 		System.out.println(newNode.getData()+" 추가됨");
 	}
 	
@@ -46,11 +47,9 @@ public class MyListQueue extends MyLinkedList implements IQueue {
 			front = tempNode.next;
 		}
 	public void removeAll() {
-		if(isEmpty()) {
-			return;
-		}
-		MyListNode temp=front;
-		temp=null;
+		front = null;
+		rear = null;
+		tail=0;
 	}
 	
 

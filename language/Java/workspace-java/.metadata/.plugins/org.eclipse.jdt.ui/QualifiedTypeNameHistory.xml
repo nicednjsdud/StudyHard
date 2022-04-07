@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="kr.co.ezenac.arraylist3.Student"/>
-    <fullyQualifiedTypeName name="kr.co.ezenac.inheritance.MountainBike"/>
-    <fullyQualifiedTypeName name="java.lang.Override"/>
-    <fullyQualifiedTypeName name="kr.co.ezenac.inheritance2.Circle"/>
-    <fullyQualifiedTypeName name="kr.co.ezenac.inheritance2.Point"/>
-    <fullyQualifiedTypeName name="kr.co.ezenac.inheritance3.Marine"/>
-    <fullyQualifiedTypeName name="kr.co.ezenac.inheritance4.VIPCustomer"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.inheritance4.Customer"/>
     <fullyQualifiedTypeName name="org.graalvm.compiler.nodes.NodeView.Default"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.total.Card"/>
@@ -60,4 +53,11 @@
     <fullyQualifiedTypeName name="kr.co.ezenac.totalex.AdvancedLevel"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.totalex.SuperLevel"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.total2.Scheduler"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.array.MyArrayListTest"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.array.MyArrayList"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.stack.MyArrayStack"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.queue.IQueue"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.linkedlist.MyLinkedList"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.queue.MyListQueue"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.linkedlist.MyListNode"/>
 </qualifiedTypeNameHistroy>
