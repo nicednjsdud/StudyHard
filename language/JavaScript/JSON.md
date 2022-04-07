@@ -104,3 +104,36 @@ JSON의 문제점
    * 위와 같은 이유로 받은 내용에서 순수하게 데이터만 추출하기 위한 JSON 관련
      라이브러리를 따로 사용하기도 한다.
         
+JSON이 가져올 수 있는 데이터
+============================
+
+   * JSON으로 가져올 수 있는 데이터는 해당 자바스크립트가 로드된 서버의 
+     데이터에 한정된다.
+
+   * 예를 들어, http://kwz.kr/json.js에서 불러올수 있는 데이터는 kwz.kr서버에
+     존재하는 것만 가능하다.
+     (구글 데이터를 불러온다거나 네이버 데이터를 불러온다거나 할 수 없다.)  
+
+JSON 형식 텍스트를 JavaScript Object로 변환하기
+==============================================
+,,,JSON
+
+   var jsonText = '{ "name": "Someone else", "lastName": "Kim" }';
+      - JSON 형식의 문자열
+
+   var realObject = JSON.parse(jsonText);
+   var jsonText2 = JSON.stringify(realObject);
+
+   console.log(realObject);
+   console.log(jsonText2);
+
+,,,
+
+   * JSON.parse(JSON으로 변환할 문자열) : JSON 형식의 텍스트를 자바스크립트 
+     객체로 변환한다.
+
+   * JSON.stringify(JSON 문자열로 변환할 값) : 자바스크립트 객체를 JSON 
+     텍스트로 변환한다.
+
+출처 : https://velog.io/@surim014/JSON%EC%9D%B4%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80        
+
