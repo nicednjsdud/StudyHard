@@ -1,2 +1,2 @@
 # StudyHard
-학원 수업
+배고픈 개발자의 study
