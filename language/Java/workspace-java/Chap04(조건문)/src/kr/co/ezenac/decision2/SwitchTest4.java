@@ -1,10 +1,10 @@
 package kr.co.ezenac.decision2;
 
-//import java.util.Scanner;
-
-public class SwitchTest4 {
-
-	public static void main(String[] args) {
+////import java.util.Scanner;
+//
+//public class SwitchTest4 {
+//
+//	public static void main(String[] args) {
 //		Scanner sc=new Scanner(System.in);
 //		System.out.print("월 : ");
 //		int month=sc.nextInt();		
@@ -26,10 +26,10 @@ public class SwitchTest4 {
 //				yield 0;
 //			}
 //		};
-		
+//		
 //		System.out.println(month+"월은 "+ day + "일입니다.");
-		
+//		
 //		sc.close();
-	}
-
-}
+//	}
+//
+//}

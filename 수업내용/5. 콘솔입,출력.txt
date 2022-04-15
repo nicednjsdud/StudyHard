@@ -1,9 +1,0 @@
-1. 출력 환경
-    1) CLI (Command-Line Interface)
-    2) GUI (Graphics User Interface)
-
-2. printf() 사용형식
-
-   1) System.out.printf("포맷 문자열",데이터,데이터,...)
-        -System.out.printf("정수: %d, 실수 : %f, 글자 : %c, 글자들 : %s",)
-        
