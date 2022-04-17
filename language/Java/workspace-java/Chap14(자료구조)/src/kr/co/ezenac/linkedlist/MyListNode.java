@@ -21,8 +21,5 @@ public class MyListNode {
 	
 	public String getData() {
 		return data;
-	}
-	
-	
-	
+	}	
 }

@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="kr.co.ezenac.treeset2.Member"/>
-    <fullyQualifiedTypeName name="java.util.Comparator"/>
-    <fullyQualifiedTypeName name="java.lang.Comparable"/>
-    <fullyQualifiedTypeName name="java.util.HashMap"/>
-    <fullyQualifiedTypeName name="java.util.Iterator"/>
-    <fullyQualifiedTypeName name="kr.co.ezenac.hashmap.MemberHashMap"/>
-    <fullyQualifiedTypeName name="kr.co.ezenac.hashmap.Member"/>
-    <fullyQualifiedTypeName name="kr.co.ezenac.innerclass.OutClass"/>
-    <fullyQualifiedTypeName name="kr.co.ezenac.innerclass.OutClass.InClass"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.innerclass2.OutClass"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.innerclass2.OutClass.InStaticClass"/>
     <fullyQualifiedTypeName name="MyRunnable"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.innerclass3.Outer"/>
-    <fullyQualifiedTypeName name="java.lang.Runnable"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.lamda1.MyInterface"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.lamda2.MyInterface"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.lamda3.MyInterface"/>
@@ -44,7 +34,6 @@
     <fullyQualifiedTypeName name="java.io.BufferedInputStream"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.auxiliary.BufferedStreamTest"/>
     <fullyQualifiedTypeName name="java.io.BufferedOutputStream"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.io.DataOutputStream"/>
     <fullyQualifiedTypeName name="java.io.DataInputStream"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.auxiliary.Person"/>
@@ -60,4 +49,15 @@
     <fullyQualifiedTypeName name="kr.co.ezenac.decorator.AAmericano"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.decorator.Mocha"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.decorator.BAmericano"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.thread.MyThread"/>
+    <fullyQualifiedTypeName name="javax.swing.plaf.basic.BasicTableHeaderUI"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.thread.MyThread2"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.priority.PriorityThread"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.priority.PriorityThread2"/>
+    <fullyQualifiedTypeName name="java.lang.Runnable"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.multithread.JoinTest"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.multithread.TeminateThreadTest"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
