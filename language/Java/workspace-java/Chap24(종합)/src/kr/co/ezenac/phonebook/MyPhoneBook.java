@@ -16,7 +16,10 @@ public class MyPhoneBook {
 		this.email=email;
 	}
 	
-	void showInfo() {
-		System.out.println(name+", "+phoneNumber+", "+email);
+	public void showInfo() {
+		System.out.println("Name : " + name);
+		System.out.println("PhoneNumber : "+phoneNumber);
+		if(email != null)
+			System.out.println("Email : "+email);
 	}
 }
