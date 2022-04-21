@@ -1,7 +1,15 @@
 package kr.co.ezenac.phonebook;
 
-public class MyPhoneBook {
+import java.io.Serializable;
+
+// 인터페이스 추가하여 직렬화 기능에 의해 저장될 수 있음.
+public class MyPhoneBook implements Serializable{
 	
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -3081785154494182010L;
 	String name;
 	String phoneNumber;
 	String email;

@@ -1,10 +1,19 @@
 package kr.co.ezenac.phonebook;
 
+import java.io.EOFException;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.Set;
 
 public class MyPhoneBookTest {
+		
 	
 	static Scanner scanner = new Scanner(System.in);
 	static Map<String, MyPhoneBook> map = new HashMap<>();
@@ -13,11 +22,14 @@ public class MyPhoneBookTest {
 	
 	public static void main(String[] args) {
 		
+		readInfo();
+		
 		int choice;
 		while(true) {
 			showMenu();
 			choice = scanner.nextInt();
 			scanner.nextLine(); 	// 숫자를 입력하고 enter을 입력하기 때문에, 이 처리를 위함.
+			
 			switch(choice) {
 			case 1:
 				addNumber();
@@ -29,6 +41,7 @@ public class MyPhoneBookTest {
 				delNumber();
 				break;
 			case 4:
+				saveInfo();
 				System.out.println("프로그램을 종료합니다.");
 				return;
 			default :
@@ -39,17 +52,83 @@ public class MyPhoneBookTest {
 				
 		}
 	}
+	
+	public static void readInfo() {
+		try( ObjectInputStream ois=		// 파일에서 객체를 읽어들림
+				new ObjectInputStream(new FileInputStream("Object.bin"))){
+	
+			while(true) {
+				MyPhoneBook myPhoneBook =(MyPhoneBook)ois.readObject();
+				
+				if(myPhoneBook==null) {
+					return;
+				}	
+				map.put(myPhoneBook.name, myPhoneBook);
+				
+			}
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+		
+	}
 
 
 
-
-	private static void delNumber() {
+	public static void saveInfo() {
+		try(ObjectOutputStream oos = // 해시맵에 있는 정보를 파일을 만들고 파일에 저장
+				new ObjectOutputStream(new FileOutputStream("Object.bin"))){
+			// 해시맵에 있는 키 값을 가져옴.
+			Set<String> ks = map.keySet();
+			
+			for(String s : ks) {
+				// 키값 이용해서 모드 해시에 저장된 값들을 가져옴
+				MyPhoneBook myphonebook = map.get(s);
+				oos.writeObject(myphonebook); // 가져온 myphonebook 객체를 파일에 저장
+				
+			}
+			
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 
 
 
-	private static void selNumber() {
+	public static void delNumber() {
+		System.out.println("조회할 이름 : ");
+		String name = scanner.nextLine();
+		MyPhoneBook myPhoneBook = map.remove(name);
+		
+		if(myPhoneBook !=null) {
+			System.out.println("삭제되었습니다.");
+		}
+		else {
+			System.out.println("해당 값이 없습니다.");
+		}
+	}
+
+
+
+
+	public static void selNumber() {
+		System.out.print("조회할 이름 : ");
+		String name =scanner.nextLine();
+		
+		MyPhoneBook myphonebook =map.get(name);
+		if(myphonebook == null) {
+			System.out.println("해당 값이 없습니다.");
+		}
+		else {
+			myphonebook.showInfo();
+		}
+		
 	}
 
 
