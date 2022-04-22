@@ -1,6 +1,7 @@
 package kr.co.ezenac.phonebook;
 
 import java.io.EOFException;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -55,15 +56,19 @@ public class MyPhoneBookTest {
 	
 	public static void readInfo() {
 		try( ObjectInputStream ois=		// 파일에서 객체를 읽어들림
-				new ObjectInputStream(new FileInputStream("Object.bin"))){
-	
-			while(true) {
+				new ObjectInputStream(new FileInputStream("C:\\Users\\ezen\\Documents\\GitHub\\StudyHard\\language\\Java\\workspace-java\\Chap24(종합)\\Object.bin"))){
+			
+			int bufSize = ois.available();
+			System.out.println(ois.available());
+			while(bufSize<0) {
+				
 				MyPhoneBook myPhoneBook =(MyPhoneBook)ois.readObject();
 				
 				if(myPhoneBook==null) {
 					return;
 				}	
 				map.put(myPhoneBook.name, myPhoneBook);
+				bufSize--;
 				
 			}
 		} catch (FileNotFoundException e) {
@@ -73,6 +78,7 @@ public class MyPhoneBookTest {
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
+	
 		
 	}
 
