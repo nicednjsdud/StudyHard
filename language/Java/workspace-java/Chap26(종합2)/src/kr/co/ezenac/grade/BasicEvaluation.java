@@ -6,7 +6,7 @@ public class BasicEvaluation implements GradeEvaluation {
 	public String getGrade(int score) {
 		
 		if(score<=100 || score>=90) {
-			String str = "A";
+			System.out.println("A");
 		}
 		else if(score>=80) {
 			System.out.println("B");
@@ -20,7 +20,7 @@ public class BasicEvaluation implements GradeEvaluation {
 		else {
 			System.out.println("F");
 		}
-		return System.out.println(str);
+		return 
 		
 	}
 
