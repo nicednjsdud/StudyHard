@@ -2,8 +2,15 @@ package kr.co.ezenac.school.view;
 
 import java.util.ArrayList;
 
+import kr.co.ezenac.grade.BasicEvaluation;
+import kr.co.ezenac.grade.GradeEvaluation;
+import kr.co.ezenac.grade.MajorEvaluation;
+import kr.co.ezenac.grade.PassFailEvaluation;
 import kr.co.ezenac.school.School;
+import kr.co.ezenac.school.Score;
+import kr.co.ezenac.school.Student;
 import kr.co.ezenac.school.Subject;
+import kr.co.ezenac.utils.Constant;
 
 /*
  *  필수과목인지 일반과목인지에 따라 각 정책 클래스가 학점을 평가할 수 있도록 구현
@@ -18,8 +25,8 @@ public class GradeReport {
 	
 	public static final String TITLE = "강의신청자 학점>> \t\t\n";
 	public static final String HEADER = "이름 \t | 학점 \t | 중점과목 \t | 점수 \n";
-	public static final String LINE = "---------------------------------------";
-	public static final String LINE2 = "=========================================";
+	public static final String LINE = "---------------------------------------\n";
+	public static final String LINE2 = "=========================================\n";
 	
 	private StringBuffer buffer = new StringBuffer();
 	
@@ -36,12 +43,75 @@ public class GradeReport {
 	}
 
 	private void makeFooter() {
+		buffer.append("\n");
 	}
 
-	private void makeBody(Subject subject) {
-		subject.getStudents();
+	public void makeBody(Subject subject) {
+		ArrayList<Student> students = subject.getStudents();
+		for(int i=0;i<students.size();i++) {
+			Student student = students.get(i);
+			buffer.append(student.getStudentName());
+			buffer.append(" | ");
+			buffer.append(student.getStudentId());
+			buffer.append(" | ");
+			buffer.append(student.getMajorSubject().getSubjectName()+"\t");
+			buffer.append(" | ");
+			getScoreGrade(student,subject);			//학생별 해당과목별 점수,학점 계산
+			buffer.append("\n");
+			buffer.append(LINE);
+		}
 	}
-
+	public void getScoreGrade(Student student, Subject subject) {
+		ArrayList<Score> scores = student.getScores();
+		int majorId = student.getMajorSubject().getSubjectId();
+		
+		
+		
+		
+		// 학점 평가 클래스
+		GradeEvaluation[] gradeEvaluation = {new BasicEvaluation(), new MajorEvaluation()
+												,new PassFailEvaluation()};
+////	GradeEvaluation grade;
+		
+		
+		
+		// 학생이 가진 점수들
+		for(int i=0;i<scores.size();i++) {
+			Score score = scores.get(i);
+			
+			if(score.getSubject().getSubjectId() == subject.getSubjectId()) { // 현재 학점을 산출할 과목
+				String grade;
+				if(score.getSubject().getGradeType()== Constant.PF_TYPE) {
+					grade = gradeEvaluation[Constant.PF_TYPE].getGrade(score.getScore());
+					
+				}
+				else {
+				if(score.getSubject().getSubjectId()==majorId) {	// 중점 과목인 경우
+					grade = gradeEvaluation[Constant.SAB_TYPE].getGrade(score.getScore());
+////				grade = new BasicEvaluation();
+////				grade.getGrade(score.getScore());
+				}			
+//				else if(score.getSubject().getSubjectId()== Constant.GOLF) {
+//					grade = gradeEvaluation[Constant.PF_TYPE].getGrade(score.getScore());
+//					
+//				}
+				
+				else {
+					grade = gradeEvaluation[Constant.AB_TYPE].getGrade(score.getScore());
+////				grade = new MajorEvaluation();
+////				grade.getGrade(score.getScore());
+				}
+				}
+				buffer.append(score.getScore());
+				buffer.append(":");
+////			buffer.append(grade.getGrade(score.getScore()));
+				buffer.append(grade);
+				buffer.append(" | ");
+			
+			}
+		}
+		
+	}
 	public void makeHeader(Subject subject) {
 		buffer.append("\t"+subject.getSubjectName());
 		buffer.append(GradeReport.TITLE);
@@ -49,3 +119,4 @@ public class GradeReport {
 		buffer.append(GradeReport.LINE2);
 	}
 }
+

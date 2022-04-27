@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.io.DataOutputStream"/>
-    <fullyQualifiedTypeName name="java.io.DataInputStream"/>
-    <fullyQualifiedTypeName name="kr.co.ezenac.auxiliary.Person"/>
-    <fullyQualifiedTypeName name="java.io.IOException"/>
-    <fullyQualifiedTypeName name="kr.co.ezenac.decorator.Coffee"/>
-    <fullyQualifiedTypeName name="kr.co.ezenac.decorator.Decorator"/>
-    <fullyQualifiedTypeName name="kr.co.ezenac.decorator.Latte"/>
-    <fullyQualifiedTypeName name="kr.co.ezenac.decorator.AAmericano"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.decorator.Mocha"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.decorator.BAmericano"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.thread.MyThread"/>
@@ -42,7 +34,6 @@
     <fullyQualifiedTypeName name="kr.co.ezenac.GradeSystem"/>
     <fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
@@ -52,12 +43,21 @@
     <fullyQualifiedTypeName name="kr.co.ezenac.jdbc.BookListTest"/>
     <fullyQualifiedTypeName name="java.sql.Statement"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
-    <fullyQualifiedTypeName name="kr.co.ezenac.utils.Constant"/>
-    <fullyQualifiedTypeName name="kr.co.ezenac.school.School"/>
     <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="kr.co.ezenac.school.Subject"/>
-    <fullyQualifiedTypeName name="kr.co.ezenac.school.view.GradeReport"/>
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
     <fullyQualifiedTypeName name="javax.swing.RepaintManager"/>
+    <fullyQualifiedTypeName name="org.graalvm.compiler.nodes.extended.GetClassNode"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.ui.UiMain"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.school.School"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.school.Student"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.school.Score"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.school.view.GradeReport"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.grade.GradeEvaluation"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.grade.BasicEvaluation"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.grade.MajorEvaluation"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.school.Subject"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.grade.PassFailEvaluation"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.utils.Constant"/>
 </qualifiedTypeNameHistroy>

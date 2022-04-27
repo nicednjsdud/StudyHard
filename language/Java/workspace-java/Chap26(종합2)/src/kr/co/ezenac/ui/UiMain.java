@@ -1,6 +1,5 @@
 package kr.co.ezenac.ui;
 
-import org.graalvm.compiler.nodes.extended.GetClassNode;
 
 import kr.co.ezenac.school.School;
 import kr.co.ezenac.school.Score;
@@ -71,6 +70,47 @@ import kr.co.ezenac.utils.Constant;
  *     
  *     수학 과목 결과 
  *     
+ *  2. 과목과 학점 정책 추가
+ *  	골프 과목이 새로 개설되고, 이 과목의 학점 평가 정책은 Pass/Fail로 정해졌습니다.
+ *  	70점 이상인 경우 pass, 미만인 경우는 fail입니다.
+ *  
+ *  	전체 5명 중 3명만 이과목을 수강신청 했습니다.
+ *  	추가된 요구사항이 잘 반영되도록 구현하시오.
+ *     			국어강의신청자 학점>> 		
+			이름 	 | 학점 	 | 중점과목 	 | 점수 
+			=========================================
+			스티브잡스 | 20000426 | 국어	 | 95:S | 
+			---------------------------------------
+			이순신 | 20000427 | 수학	 | 95:A | 
+			---------------------------------------
+			리누스토발즈 | 20000428 | 국어	 | 100:S | 
+			---------------------------------------
+			라이언고스링 | 20000429 | 국어	 | 89:B | 
+			---------------------------------------
+			이도 | 20000430 | 수학	 | 83:B | 
+			---------------------------------------
+				수학강의신청자 학점>> 		
+			이름 	 | 학점 	 | 중점과목 	 | 점수 
+			=========================================
+			스티브잡스 | 20000426 | 국어	 | 56:D | 
+			---------------------------------------
+			이순신 | 20000427 | 수학	 | 98:S | 
+			---------------------------------------
+			리누스토발즈 | 20000428 | 국어	 | 88:B | 
+			---------------------------------------
+			라이언고스링 | 20000429 | 국어	 | 95:A | 
+			---------------------------------------
+			이도 | 20000430 | 수학	 | 56:F | 
+			---------------------------------------
+				골프강의신청자 학점>> 		
+			이름 	 | 학점 	 | 중점과목 	 | 점수 
+			=========================================
+			스티브잡스 | 20000426 | 국어	 | 95:P | 
+			---------------------------------------
+			이순신 | 20000427 | 수학	 | 85:P | 
+			---------------------------------------
+			리누스토발즈 | 20000428 | 국어	 | 55:F | 
+			---------------------------------------
  */
 public class UiMain {
 	
@@ -78,6 +118,7 @@ public class UiMain {
 	
 	Subject korean;
 	Subject math;
+	Subject golf;
 	
 	GradeReport gradeReport = new GradeReport();
 	
@@ -87,7 +128,8 @@ public class UiMain {
 		
 		uimain.createSubject();
 		uimain.createStudent();
-			
+		String report = uimain.gradeReport.getReport();
+		System.out.println(report.toString());			//화면 출력
 	}
 
 	public void createStudent() {
@@ -115,15 +157,22 @@ public class UiMain {
 		math.register(student4);
 		math.register(student5);
 		
+		golf.register(student1);
+		golf.register(student2);
+		golf.register(student3);
+		
 		addScoreForStudent(student1,korean, 95);
 		addScoreForStudent(student1,math, 56);
+		addScoreForStudent(student1,golf, 95);
 		
 		addScoreForStudent(student2,korean, 95);
 		addScoreForStudent(student2,math, 98);
+		addScoreForStudent(student2,golf, 85);
 		
 		addScoreForStudent(student3,korean, 100);
 		addScoreForStudent(student3,math,88);
-
+		addScoreForStudent(student3,golf, 55);
+		
 		addScoreForStudent(student4,korean, 89);
 		addScoreForStudent(student4,math,95);
 
@@ -139,9 +188,12 @@ public class UiMain {
 	public void createSubject() {
 		korean = new Subject(Constant.KOREAN, "국어");
 		math = new Subject(Constant.MATH,"수학");
+		golf = new Subject(Constant.GOLF,"골프");
+		golf.setGradeType(Constant.PF_TYPE);
 		
 		bobSchool.addSubject(korean);
 		bobSchool.addSubject(math);
+		bobSchool.addSubject(golf);
 	}
 
 }

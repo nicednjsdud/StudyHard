@@ -5,23 +5,23 @@ public class BasicEvaluation implements GradeEvaluation {
 	@Override
 	public String getGrade(int score) {
 		
-		if(score<=100 || score>=90) {
-			System.out.println("A");
+		String grade;
+		if(score<=100 && score>=90) {		
+			grade="A";
 		}
 		else if(score>=80) {
-			System.out.println("B");
+			grade="B";
 		}
 		else if(score>=70) {
-			System.out.println("C");
+			grade="C";
 		}
 		else if(score>=55) {
-			System.out.println("D");
+			grade="D";
 		}
 		else {
-			System.out.println("F");
+			grade="F";
 		}
-		return 
-		
+		return grade;
 	}
 
 }
