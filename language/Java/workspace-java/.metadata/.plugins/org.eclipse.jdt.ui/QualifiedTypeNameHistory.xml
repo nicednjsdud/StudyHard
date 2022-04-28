@@ -44,7 +44,6 @@
     <fullyQualifiedTypeName name="java.sql.Statement"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
-    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
     <fullyQualifiedTypeName name="javax.swing.RepaintManager"/>
     <fullyQualifiedTypeName name="org.graalvm.compiler.nodes.extended.GetClassNode"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.ui.UiMain"/>
@@ -60,4 +59,5 @@
     <fullyQualifiedTypeName name="kr.co.ezenac.school.Subject"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.grade.PassFailEvaluation"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.utils.Constant"/>
+    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
 </qualifiedTypeNameHistroy>
