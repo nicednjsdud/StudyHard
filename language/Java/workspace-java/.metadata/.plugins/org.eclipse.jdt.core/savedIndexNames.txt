@@ -30,3 +30,10 @@ INDEX VERSION 1.131+C:\Users\ezen\Documents\GitHub\StudyHard\language\Java\works
 1563426318.index
 4079704084.index
 2741155148.index
+<<<<<<< Updated upstream
+=======
+1191815241.index
+1506112961.index
+2254206805.index
+764008054.index
+>>>>>>> Stashed changes
