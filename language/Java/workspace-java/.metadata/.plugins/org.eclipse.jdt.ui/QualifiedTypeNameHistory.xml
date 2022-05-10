@@ -44,6 +44,7 @@
     <fullyQualifiedTypeName name="java.sql.Statement"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
+<<<<<<< Updated upstream
     <fullyQualifiedTypeName name="javax.swing.RepaintManager"/>
     <fullyQualifiedTypeName name="org.graalvm.compiler.nodes.extended.GetClassNode"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.ui.UiMain"/>
@@ -60,4 +61,41 @@
     <fullyQualifiedTypeName name="kr.co.ezenac.grade.PassFailEvaluation"/>
     <fullyQualifiedTypeName name="kr.co.ezenac.utils.Constant"/>
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+=======
+    <fullyQualifiedTypeName name="kr.co.ezenac.encap.MakeReport"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.collabration.Student"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.collabration.Bus"/>
+    <fullyQualifiedTypeName name="org.graalvm.compiler.core.common.type.ArithmeticOpTable.BinaryOp.Sub"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.collabration.Subway"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.collabration2.Person"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.collabration2.Taxi"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.staticvariable.Employee"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.staticmethod.MyCalculator"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.singleton.Company"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.singleton2.CarFactory"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.singleton2.Car"/>
+    <fullyQualifiedTypeName name="java.lang.Iterable"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.array4.Book"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.bankApp.Account"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.arraylist2.Book"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.arraylist3.Subject"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.arraylist3.Student"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.inheritance.MountainBike"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.inheritance2.Circle"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.inheritance2.Point"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.inheritance3.Marine"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.inheritance4.VIPCustomer"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.inheritance4.Customer"/>
+    <fullyQualifiedTypeName name="org.graalvm.compiler.nodes.NodeView.Default"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.total.Card"/>
+    <fullyQualifiedTypeName name="kr.co.ezenac.total.Deck"/>
+    <fullyQualifiedTypeName name="org.graalvm.compiler.nodes.SafepointNode"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+>>>>>>> Stashed changes
 </qualifiedTypeNameHistroy>
