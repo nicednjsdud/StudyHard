@@ -1,4 +1,4 @@
-package kr.co.connect.jdbcexam.dto;
+package kr.or.connect.jdbcexam.dto;
 
 public class Role {
 	private Integer roleId;
