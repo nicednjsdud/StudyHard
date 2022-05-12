@@ -11,9 +11,9 @@ public class JDBCExam2 {
 		Role role = new Role(roleId, description);
 		
 		RoleDao dao = new RoleDao();
-		int insertCount = dao.addRole(role);
+//		int insertCount = dao.addRole(role);
 
-		System.out.println(insertCount);
+//		System.out.println(insertCount);
 		
 	}
 
