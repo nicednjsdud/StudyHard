@@ -1,0 +1,26 @@
+package kr.co.connect.diexam_1;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Car {
+	
+	@Autowired	// 알아서 주입해
+	private Engine v8;
+	
+	public Car() {
+		System.out.println("Car 생성자");
+	}
+	
+	public void run() {
+		System.out.println("엔진을 이용하여 달립니다.");
+		v8.exec();
+	}
+//	public static void main(String[] args) {
+//		Engine e = new Engine();
+//		Car c = new Car();
+//		c.setEngine(e);
+//		c.run();
+//	}
+}
