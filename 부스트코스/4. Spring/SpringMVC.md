@@ -89,3 +89,92 @@ Spring
 ### 7) 요청 처리 종료
 
 ![alt](https://cphinf.pstatic.net/mooc/20180219_296/1519004150778ofOPV_PNG/8.png?type=w760)
+
+## DispatcherServlet을 FrontController로 설정하기
+
+* web.xml 파일에 설정
+* org.springframework.web.WebApplicationInitializer 인터페이스를 구현해 사용
+
+### 1) @Configuration
+
+* org.springframework.context.annotation의 Configuration 애노테이션과  
+  Bean 애노테이션 코드를 이용하여 스프링 컨테이너에 새로운 빈 객체를 제공
+
+### 2) @EnableWebMvc
+
+* DispathcerServlet의 RequestMappingHandlerMaping,  
+   RequestMappingHandlerAdapter, ExceptionHandlerExceptionResolver,  
+   MessageConverter등 Web에 필요한 빈들을 대부분 자동으로 설정 해준다.
+* 기본 설정 이외의 설정이 필요하다면 WebMvcConfigurerAdapter를 상속받도록  
+  Java config class를 작성한 후, 필요한 메서드를 오버라이딩 하도록 한다.
+
+### 3) @ComponentScan
+
+* ComponentScan애노테이션을 이용하면 Controller,Service,Repository,  
+  Component애노테이션이 붙은 클래스를 찾아 스프링 컨테이너가 관리하게 된다.
+* DefaultAnnotationHandlerMapping과 RequestMappingHandlerMapping구현체는  
+  다른 핸들러 매핑보다 훨씬 더 정교한 작업을 수행한다.
+    * 이 두개의 구현체는 애노테이션을 사용해 매핑 관계를 찾는 매우 강력한  
+      기능을 가지고있다. 
+    * 이들 구현체는 스프링 컨테이너 즉 애플리케이션 컨텍스트에 있는 요청 처리  
+      빈에서 RequestMapping애노테이션을 클래스나 메소드에서 찾아   
+      HandlerMpping객체를 생성하게 된다.
+        * HandlerMapping은 서버로 들어온 요청을 어느 핸들러로 전달할지 결정  
+          하는 역할을 수행한다.
+* DefaultAnnoationHandlerMapping은 DispatcherServlet이 기본으로 등록하는  
+  기본 핸들러 맵핑객체이고, RequestMappingHandlerMapping은 더 강력하고   
+  유연하지만 사용하려면 명시적으로 설정해야 한다.
+
+### 3) @RequestMapping
+
+* Http 요청과 이를 다루기 위한 Controller의 메소드를 연결하는 어노테이션
+
+#### Http Method 와 연결하는 방법
+
+```java
+  @RequestMapping("/users",method=RequestMethod.POST)
+```
+
+##### From Spring 4.3 version
+
+* @GetMapping
+* @PostMapping
+* @putMapping
+* @DeleteMaping
+* @PatchMapping
+
+#### 특정 해더와 연결하는 방법
+
+```java
+  @RequestMapping(method = Requestmethod.GET.
+          headers="content-type-application/json")
+```
+
+#### Http Parameter 와 연결하는 방법
+
+```java
+  @RequestMapping(method=RequestMethod.GET.parmas="type=raw")
+```
+
+#### Contnet=Type Header와 연결하는 방법
+
+```java
+  @RequestMapping(method=Requestmethod.GET.consumes="application/json")
+```
+
+#### Accept Header 와 연결하는 방법
+
+```java
+  @RequestMapping(Method=RequestMethod.GET.produces="application/json")
+```
+
+
+
+
+
+
+
+
+
+
+
