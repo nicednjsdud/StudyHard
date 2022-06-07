@@ -10,6 +10,8 @@
   <url>http://maven.apache.org</url>
 
   <properties>
+    <failOnMissingWebXml>false</failOnMissingWebXml>
+        <spring.version>5.2.3.RELEASE</spring.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
@@ -21,10 +23,30 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
+          <!-- spring-context와 spring-test를 의존성에 추가합니다.-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+		<!-- test mock을 위한 라이브러리를 추가합니다. -->
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>1.9.5</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <!-- 사용할 JDK버전을 입력합니다. JDK 11을 사용할 경우에는 1.8대신에 11로 수정합니다.--><!-- 사용할 JDK버전을 입력합니다. JDK 11을 사용할 경우에는 1.8대신에 11로 수정합니다.-->
     <build>
+    <pluginManagement>
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -36,5 +58,6 @@
                 </configuration>
             </plugin>
         </plugins>
+        </pluginManagement>
     </build>
 </project>

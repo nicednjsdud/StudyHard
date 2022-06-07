@@ -27,3 +27,4 @@ IoC/DI 컨테이너
   BeanFactory보다 추천된다. 트랜잭션 처리, AOP등에 대한 처리를 할 수있다.  
   BeanPostProcessor, BeanFactoryPostProcessor등을 자동으로 등록하고,  
   국제화 처리, 어플리케이션 이벤트 등을 처리할 수 있다.
+
