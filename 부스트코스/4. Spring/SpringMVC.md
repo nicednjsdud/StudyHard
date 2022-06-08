@@ -168,10 +168,22 @@ Spring
   @RequestMapping(Method=RequestMethod.GET.produces="application/json")
 ```
 
+### 4) @RequestParam
 
+* Mapping 된 메소드의 Argument에 붙일 수 있는 어노테이션
+* @RequestParam의 name에는 http parameter의 name과 맵핑
+* @RequestParam의 required는 필수인지 아닌지 판단.
 
+### 5) @PathVariable
 
+* @RequestMapping의 path에 변수명을 입력받기 위한 placeholder가 필요함
+* place holder의 이름과 PathVaiable의 name 값과 같으면 mapping 됨.
+* required 속성은 default true 임
 
+### 6) @ RequestHeader
+
+* 요청정보의 헤더 정보를 읽어 들일 때 사용
+* @RequestHeader(name="헤더명") String 변수명
 
 
 
