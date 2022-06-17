@@ -25,7 +25,7 @@
 	<br>
 	
 	<c:forEach items="${pageStartList }" var="pageIndex" varStatus="status">
-		<a href="list?start=${pageIndex }">${status.index+1 }</a>&nbsp&nbsp;
+		<a href="list?start=${pageIndex }">${status.index+1 }</a> &nbsp;&nbsp;
 	</c:forEach>
 	
 	<br><br>
