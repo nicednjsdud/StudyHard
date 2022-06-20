@@ -28,64 +28,43 @@ public class GuestbookApiController {
 	GuestbookService guestbookService;
 	
 	@GetMapping
-	public Map<String,Object> list(@RequestParam(name="start",required=false,defaultValue="0")int start){
+	public Map<String, Object> list(@RequestParam(name="start", required=false, defaultValue="0") int start) {
 		
 		List<Guestbook> list = guestbookService.getGuestbooks(start);
 		
 		int count = guestbookService.getCount();
 		int pageCount = count / GuestbookService.LIMIT;
-		if(count % GuestbookService.LIMIT>0) {
+		if(count % GuestbookService.LIMIT > 0)
 			pageCount++;
+		
+		List<Integer> pageStartList = new ArrayList<>();
+		for(int i = 0; i < pageCount; i++) {
+			pageStartList.add(i * GuestbookService.LIMIT);
 		}
-		List<Integer> pageStartList = new ArrayList<Integer>();
-		for(int i=0;i<pageCount;i++) {
-			pageStartList.add(i*GuestbookService.LIMIT);
-		}
-		Map<String,Object> map = new HashMap<>();
+		
+		Map<String, Object> map = new HashMap<>();
 		map.put("list", list);
-		map.put("count",count);
+		map.put("count", count);
 		map.put("pageStartList", pageStartList);
-		
-		
 		
 		return map;
 	}
+	
 	@PostMapping
 	public Guestbook write(@RequestBody Guestbook guestbook,
-							HttpServletRequest request) {
+						HttpServletRequest request) {
 		String clientIp = request.getRemoteAddr();
-		// id가 입력한 guestbook을 반환한다.
+		// id가 입력된 guestbook이 반환된다.
 		Guestbook resultGuestbook = guestbookService.addGuestbook(guestbook, clientIp);
 		return resultGuestbook;
 	}
 	
 	@DeleteMapping("/{id}")
-	public Map<String,String> delete(@PathVariable(name="id") Long id,
-			HttpServletRequest request){
+	public Map<String, String> delete(@PathVariable(name="id") Long id,
+			HttpServletRequest request) {
 		String clientIp = request.getRemoteAddr();
 		
 		int deleteCount = guestbookService.deleteGuestbook(id, clientIp);
-		return Collections.singletonMap("success", deleteCount > 0 ? "true":"false");
+		return Collections.singletonMap("success", deleteCount > 0 ? "true" : "false");
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
